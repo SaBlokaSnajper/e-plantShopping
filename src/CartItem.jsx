@@ -19,11 +19,8 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleContinueShopping = (e) => {
-    if (e) {
-      e.preventDefault(); // Only call preventDefault if 'e' is provided
-    }
-
-    onContinueShopping(); // Call the provided function to navigate to the next page (e.g., checkout page)
+    e.preventDefault();
+    onContinueShopping();
   };
 
   const handleIncrement = (item) => {
